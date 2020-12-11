@@ -1,0 +1,19 @@
+Package: ukpdstools
+Title: Tools to support use of UKPDS
+Version: 1.0.0
+Authors@R: person("Mi Jun", "Keng", email = "mijun.keng@ndph.ox.ac.uk", role = c("aut", "cre"))
+Description: Tools to aid the use of UKPDS-OM2
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Imports: 
+    XLConnect,
+    RDCOMClient,
+    readxl,
+    parallel,
+    doParallel,
+    foreach,
+    tidyr
+Depends: 
+    dplyr

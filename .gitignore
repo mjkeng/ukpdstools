@@ -1,0 +1,7 @@
+.Rhistory
+.RData
+.Rproj.user
+.Rbuildignore
+
+script/
+data-raw/
