@@ -23,6 +23,14 @@ This package consolidates functions to
 
 ## Installation
 
+`ukpdstools` can be installed with the following code: 
+
+``` r
+devtools::install_git('https://github.com/mjkeng/ukpdstools')
+
+```
+
+
 One of the dependencies in this package `RDCOMClient` is not globally available on CRAN. If not already installed, run the following command:
 
 ``` r
@@ -54,7 +62,7 @@ options(java.parameters = "-Xmx8000m")
 * `OM_import_rf` imports all risk factor worksheets, including baseline characteristics
 * `OM_import_outcomes` imports all outcomes worksheets
 
-## Datasets 
+## Data files in package 
 
 * `ukpds_colnames` with order of input variables  
 * `ukpds_limit` with limits for input set within the model  

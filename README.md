@@ -1,24 +1,19 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# ukpds
+# ukpdstools
 
 This package consolidates functions to
 
   - Format UKPDS-OM2 input worksheets
-
   - Import results from UKPDS-OM2 worksheets
-
-  - Sample baseline cohort (Future project?)
 
 ## Installation
 
-`ukpds` can be installed from [GitLab](https://gitlab.ndph.ox.ac.uk)
-with:
+`ukpdstools` can be installed with the following code:
 
 ``` r
-devtools::install_git('https://gitlab.ndph.ox.ac.uk/mkeng/ukpds.git', credentials = git2r::cred_user_pass("yourusername", getPass::getPass()))
-## getPass() prompts you to enter your password - safer option than to have password stored in script
+devtools::install_git('https://github.com/mjkeng/ukpdstools')
 ```
 
 One of the dependencies in this package `RDCOMClient` is not globally
@@ -31,7 +26,7 @@ install.packages("RDCOMClient", repos = "http://www.omegahat.net/R")
 It is recommended for additional memory to be allocated as running Excel
 through `RDCOMClient` requires quite significant amount of memory space.
 This can be done by running the code below **before** calling the
-`ukpds` package.
+`ukpdstools` package.
 
 ``` r
 options(java.parameters = "-Xmx8000m")
@@ -56,7 +51,7 @@ options(java.parameters = "-Xmx8000m")
     baseline characteristics
   - `OM_import_outcomes` imports all outcomes worksheets
 
-## Datasets
+## Data files in package
 
   - `ukpds_colnames` with order of input variables  
   - `ukpds_limit` with limits for input set within the model  
